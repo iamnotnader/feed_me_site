@@ -1,5 +1,16 @@
 /* app css stylesheet */
 
+html, body {
+  height: 100%;
+  overflow: auto;
+}
+
+.overall_container {
+  height: 100%;
+  background-color: red;
+  overflow: auto;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
