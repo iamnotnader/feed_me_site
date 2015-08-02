@@ -1,0 +1,30 @@
+<!--The main landing page that loads inside the ng-view.-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <p class="landing_title">FoodMe</p>
+      <p class="landing_tagline">Swipe away your hunger.</p>
+      <img class="landing_mascot" ng-src="{{burgerImageSrc}}" alt="Say hello to Burgie, our mascot!">
+      <p class="landing_description">Free delivery and meals from $8.</p>
+      <button class="landing_download_button" ng-mouseover="enterAppButton()" ng-mouseout="leaveAppButton()">DOWNLOAD THE APP</button>
+      <div class="row desktop-only">
+        <a href="#/about_page" class="col-xs-3 landing_link">About</a>
+        <a href="#/contact_page" class="col-xs-3 landing_link">Contact</a>
+        <a href="#/terms_page" class="col-xs-3 landing_link">Terms</a>
+        <a href="#/privacy_page" class="col-xs-3 landing_link">Privacy</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img class="landing_phone_mobile mobile-only" src="/app/landing_page/phone.svg">
+      <img class="landing_phone_desktop desktop-only" src="/app/landing_page/phone_with_shadow.svg">
+    </div>
+    <div class="col-md-offset-1"></div>
+  </div>
+      <div class="row mobile-only">
+        <a href="#/about_page" class="col-xs-3 landing_link">About</a>
+        <a href="#/contact_page" class="col-xs-3 landing_link">Contact</a>
+        <a href="#/terms_page" class="col-xs-3 landing_link">Terms</a>
+        <a href="#/privacy_page" class="col-xs-3 landing_link">Privacy</a>
+      </div>
+</div>

@@ -1,12 +1,14 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+angular.module('foodMeApp', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
+  'foodMeApp.landingPage',
+  'foodMeApp.aboutPage',
+  'foodMeApp.contactPage',
+  'foodMeApp.termsPage',
+  'foodMeApp.privacyPage',
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/landing_page'});
 }]);

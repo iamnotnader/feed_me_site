@@ -1,54 +1,60 @@
-@font-face {
-  font-family: TitleFont;
-  src: url("fonts/Alegreya Sans 900.ttf"); }
-@font-face {
-  font-family: TaglineFont;
-  src: url("fonts/Alegreya Sans 500.ttf"); }
+@import 'colors';
+@import 'fonts/fonts';
+
+$on-mobile: "screen and (max-width: 480px)";
+$on-desktop: "screen and (min-width: 480px)";
+
 html, body {
   height: 100%;
-  overflow: auto; }
+  overflow: auto;
+}
 
 .overall_container {
   height: 100%;
-  background-color: #BF9B81;
-  overflow: auto; }
+  background-color: $overall_background_color;
+  overflow: auto;
+}
 
 .landing_mascot {
   width: 50%;
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 .landing_title {
+  @media #{$on-desktop} {
+    font-size: 6em;
+    margin-top: 1rem;
+  }
   padding-top: 1rem;
   font-size: 3em;
   text-align: center;
   margin-bottom: 0;
-  color: #443133;
-  font-family: 'TitleFont'; }
-  @media screen and (min-width: 480px) {
-    .landing_title {
-      font-size: 6em;
-      margin-top: 1rem; } }
+  color: $landing-text-color;
+  font-family: 'TitleFont';
+}
 
 .landing_tagline {
+  @media #{$on-desktop} {
+    font-size: 4em;
+  }
   font-size: 2em;
   text-align: center;
-  color: #443133;
-  font-family: 'TaglineFont'; }
-  @media screen and (min-width: 480px) {
-    .landing_tagline {
-      font-size: 4em; } }
+  color: $landing-text-color;
+  font-family: 'TaglineFont';
+}
 
 .landing_description {
+  @media #{$on-desktop} {
+    font-size: 4em;
+  }
   font-size: 1.5em;
   padding-top: 1rem;
   text-align: center;
-  color: #443133;
-  font-family: 'TaglineFont'; }
-  @media screen and (min-width: 480px) {
-    .landing_description {
-      font-size: 4em; } }
+  color: $landing-text-color;
+  font-family: 'TaglineFont';
+}
 
 a.landing_link {
   font-family: 'TaglineFont';
@@ -59,17 +65,20 @@ a.landing_link {
   padding-left: 0;
   padding-right: 0;
   cursor: pointer;
-  color: #443133; }
-  @media screen and (min-width: 480px) {
-    a.landing_link {
-      margin-top: 0;
-      font-size: 3em; } }
+  color: $landing-text-color;
+
+  @media #{$on-desktop} {
+    margin-top: 0;
+    font-size: 3em;
+  }
+}
 
 .landing_phone_mobile {
   width: 100%;
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 .landing_phone_desktop {
   font-size: 8rem;
@@ -77,11 +86,12 @@ a.landing_link {
   margin-right: auto;
   width: 75%;
   margin-top: 8rem;
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+}
 
 .landing_download_button {
   font-size: 1.8em;
-  color: #BF9B81;
+  color: $overall_background_color;
   font-family: 'TitleFont';
   display: block;
   margin-left: auto;
@@ -89,25 +99,28 @@ a.landing_link {
   height: 2.5em;
   padding: 0em 1em;
   border-radius: 19px;
-  background-color: #443133;
+  background-color: $landing-text-color;
   border: none;
-  margin-bottom: 1em; }
-  .landing_download_button:hover {
+  margin-bottom: 1em;
+  &:hover {
     color: #CD8B34;
-    background-color: #531E11; }
-  @media screen and (min-width: 480px) {
-    .landing_download_button {
-      font-size: 3em; } }
+    background-color: #531E11;
+  }
+  @media #{$on-desktop} {
+    font-size: 3em;
+  }
+}
 
 .about_mascot {
   margin-top: 1em;
   width: 50%;
   display: block;
   margin-left: auto;
-  margin-right: auto; }
-  @media screen and (min-width: 480px) {
-    .about_mascot {
-      margin-top: 6rem; } }
+  margin-right: auto;
+  @media #{$on-desktop} {
+    margin-top: 6rem;
+  }
+}
 
 .about_title {
   font-size: 6em;
@@ -116,12 +129,13 @@ a.landing_link {
   font-size: 3em;
   text-align: center;
   margin-bottom: 0;
-  color: #443133;
+  color: $landing-text-color;
   font-family: 'TitleFont';
-  display: block; }
-  @media screen and (min-width: 480px) {
-    .about_title {
-      margin-top: 2rem; } }
+  display: block;
+  @media #{$on-desktop} {
+    margin-top: 2rem;
+  }
+}
 
 a.about_link {
   font-family: 'TaglineFont';
@@ -130,10 +144,11 @@ a.about_link {
   padding-left: 0;
   padding-right: 0;
   cursor: pointer;
-  color: #443133; }
-  @media screen and (min-width: 480px) {
-    a.about_link {
-      margin-top: 1rem; } }
+  color: $landing-text-color;
+  @media #{$on-desktop} {
+    margin-top: 1rem;
+  }
+}
 
 .about_description {
   margin-top: 2rem;
@@ -141,42 +156,55 @@ a.about_link {
   font-size: 1.4em;
   margin-bottom: 1em;
   color: #443133;
-  font-family: 'TitleFont'; }
+  font-family: 'TitleFont';
+}
 
+// Mobile hacks
 .desktop-only {
-  display: block; }
-
+  display: block;
+}
 .mobile-only {
-  display: none; }
+  display: none;
+}
 
 @media screen and (max-width: 480px) {
   .desktop-only {
-    display: none; }
-
+    display: none;
+  }
   .mobile-only {
-    display: block; } }
+    display: block;
+  }
+}
+
+
+
 /*Delete the stuff below soon.*/
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
   margin-bottom: 2em;
-  padding: 0 0 0.5em; }
+  padding: 0 0 0.5em;
+}
 
 .menu:before {
-  content: "["; }
+  content: "[";
+}
 
 .menu:after {
-  content: "]"; }
+  content: "]";
+}
 
 .menu > li {
-  display: inline; }
+  display: inline;
+}
 
 .menu > li:before {
   content: "|";
-  padding-right: 0.3em; }
+  padding-right: 0.3em;
+}
 
 .menu > li:nth-child(1):before {
   content: "";
-  padding: 0; }
+  padding: 0;
+}
 
-/*# sourceMappingURL=app.css.map */
