@@ -91,7 +91,8 @@ a.landing_link {
   border-radius: 19px;
   background-color: #443133;
   border: none;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  outline: none; }
   .landing_download_button:hover {
     color: #CD8B34;
     background-color: #531E11; }

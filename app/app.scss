@@ -102,6 +102,7 @@ a.landing_link {
   background-color: $landing-text-color;
   border: none;
   margin-bottom: 1em;
+  outline: none;
   &:hover {
     color: #CD8B34;
     background-color: #531E11;

@@ -12,8 +12,8 @@ angular.module('foodMeApp.landingPage', ['ngRoute'])
 .controller('LandingPageCtrl', ["$scope", "$interval", function($scope, $interval) {
   // Encapsulate the eyebrow-raising logic.
   var init_eyebrows = function(scope_arg, interval_arg) {
-    var normalBurgerSrc = "/app/landing_page/normal_burger.svg";
-    var happyBurgerSrc = "/app/landing_page/happy_burger.svg";
+    var normalBurgerSrc = "landing_page/normal_burger.svg";
+    var happyBurgerSrc = "landing_page/happy_burger.svg";
     var eyebrowPromise;
     var eyebrowRaiseInterval = 1500;
     scope_arg.burgerImageSrc = normalBurgerSrc;
