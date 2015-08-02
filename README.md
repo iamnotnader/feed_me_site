@@ -1,6 +1,6 @@
-Ordering food is sucks because there are too many choices. First you have to
-pick a restaurant, and THEN you have to figure out if any of its dishes are
-actually worth eating. Why pick a restaurant at all?
+Deciding what to eat is painful because there isn't an efficient way to sift through all the choices. First, you have to pick a restaurant, and then even after you've done that, you still need to choose which dish to get.
 
-FoodMe shows you full ready-made dishes, one at a time, and you choose them just
-by swiping. It's so fun and simple you'll use it every day.
+
+FoodMe solves this problem by taking you straight to choosing your meal, without overwhelming you with choices. Just swipe through our selection of fully-prepared meals, and order up! All prices in FoodMe have the tax, tip, and delivery fee included so literally the only thing you need to do is swipe, then hit a button.
+
+![Alt text](https://goo.gl/photos/xEB7XUBTJ1keKxmS7)
