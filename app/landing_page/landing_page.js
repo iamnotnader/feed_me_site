@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('foodMeApp.landingPage', ['ngRoute'])
+angular.module('foodMeApp.landingPage', ['ngRoute', 'commonServices'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/landing_page', {
@@ -9,7 +9,7 @@ angular.module('foodMeApp.landingPage', ['ngRoute'])
   });
 }])
 
-.controller('LandingPageCtrl', ["$scope", "$interval", function($scope, $interval) {
+.controller('LandingPageCtrl', ["$scope", "$interval", "CommonCode", function($scope, $interval, CommonCode) {
   // Encapsulate the eyebrow-raising logic.
   var init_eyebrows = function(scope_arg, interval_arg) {
     var normalBurgerSrc = "landing_page/normal_burger.svg";
@@ -54,4 +54,5 @@ angular.module('foodMeApp.landingPage', ['ngRoute'])
 
   // Actual init.
   init_eyebrows($scope, $interval);
+  CommonCode.scrollToId('topOfPage');
 }]);

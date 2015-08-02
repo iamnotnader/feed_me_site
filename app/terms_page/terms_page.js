@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('foodMeApp.termsPage', ['ngRoute'])
+angular.module('foodMeApp.termsPage', ['ngRoute', 'commonServices'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/terms_page', {
@@ -9,5 +9,7 @@ angular.module('foodMeApp.termsPage', ['ngRoute'])
   });
 }])
 
-.controller('termsPageCtrl', ["$scope", function($scope) {
+.controller('termsPageCtrl', ["$scope", "CommonCode", function($scope, CommonCode) {
+  // Always scroll to the top of the page.
+  CommonCode.scrollToId('topOfPage');
 }]);

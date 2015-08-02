@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('foodMeApp.contactPage', ['ngRoute'])
+angular.module('foodMeApp.contactPage', ['ngRoute', 'commonServices'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/contact_page', {
@@ -9,5 +9,7 @@ angular.module('foodMeApp.contactPage', ['ngRoute'])
   });
 }])
 
-.controller('contactPageCtrl', ["$scope", function($scope) {
+.controller('contactPageCtrl', ["$scope", "CommonCode", function($scope, CommonCode) {
+  // Always scroll to the top of the page.
+  CommonCode.scrollToId('topOfPage');
 }]);

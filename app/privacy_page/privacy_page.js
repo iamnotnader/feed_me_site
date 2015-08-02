@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('foodMeApp.privacyPage', ['ngRoute'])
+angular.module('foodMeApp.privacyPage', ['ngRoute', 'commonServices'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/privacy_page', {
@@ -9,5 +9,7 @@ angular.module('foodMeApp.privacyPage', ['ngRoute'])
   });
 }])
 
-.controller('privacyPageCtrl', ["$scope", function($scope) {
+.controller('privacyPageCtrl', ["$scope", "CommonCode", function($scope, CommonCode) {
+  // Always scroll to the top of the page.
+  CommonCode.scrollToId('topOfPage');
 }]);
