@@ -10,7 +10,7 @@ html, body {
 
 .overall_container {
   height: 100%;
-  background-color: #BF9B81;
+  background-color: #8C6954;
   overflow: auto; }
 
 .landing_mascot {
@@ -24,7 +24,7 @@ html, body {
   font-size: 3em;
   text-align: center;
   margin-bottom: 0;
-  color: #443133;
+  color: #260126;
   font-family: 'TitleFont'; }
   @media screen and (min-width: 480px) {
     .landing_title {
@@ -34,7 +34,7 @@ html, body {
 .landing_tagline {
   font-size: 2em;
   text-align: center;
-  color: #443133;
+  color: #260126;
   font-family: 'TaglineFont'; }
   @media screen and (min-width: 480px) {
     .landing_tagline {
@@ -44,7 +44,7 @@ html, body {
   font-size: 1.5em;
   padding-top: 1rem;
   text-align: center;
-  color: #443133;
+  color: #260126;
   font-family: 'TaglineFont'; }
   @media screen and (min-width: 480px) {
     .landing_description {
@@ -59,7 +59,7 @@ a.landing_link {
   padding-left: 0;
   padding-right: 0;
   cursor: pointer;
-  color: #443133; }
+  color: #260126; }
   @media screen and (min-width: 480px) {
     a.landing_link {
       margin-top: 0;
@@ -81,7 +81,7 @@ a.landing_link {
 
 .landing_download_button {
   font-size: 1.8em;
-  color: #BF9B81;
+  color: #8C6954;
   font-family: 'TitleFont';
   display: block;
   margin-left: auto;
@@ -89,7 +89,7 @@ a.landing_link {
   height: 2.5em;
   padding: 0em 1em;
   border-radius: 19px;
-  background-color: #443133;
+  background-color: #260126;
   border: none;
   margin-bottom: 1em;
   outline: none; }
@@ -117,7 +117,7 @@ a.landing_link {
   font-size: 3em;
   text-align: center;
   margin-bottom: 0;
-  color: #443133;
+  color: #260126;
   font-family: 'TitleFont';
   display: block; }
   @media screen and (min-width: 480px) {
@@ -131,7 +131,7 @@ a.about_link {
   padding-left: 0;
   padding-right: 0;
   cursor: pointer;
-  color: #443133; }
+  color: #260126; }
   @media screen and (min-width: 480px) {
     a.about_link {
       margin-top: 1rem; } }
