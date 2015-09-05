@@ -6,13 +6,13 @@ $on-desktop: "screen and (min-width: 480px)";
 
 html, body {
   height: 100%;
-  overflow: auto;
 }
 
 .overall_container {
   height: 100%;
   background-color: $brown_1;
-  overflow: auto;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
 }
 
 .landing_mascot {
