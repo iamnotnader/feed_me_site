@@ -103,12 +103,20 @@ a.landing_link {
   border: none;
   margin-bottom: 1em;
   outline: none;
+  line-height: 2.5em;
+  text-align: center;
+  cursor: pointer;
+
   &:hover {
     color: #CD8B34;
     background-color: #531E11;
   }
   @media #{$on-desktop} {
     font-size: 3em;
+    width: 12em;
+  }
+  @media #{$on-mobile} {
+    width: 90%;
   }
 }
 

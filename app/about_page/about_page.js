@@ -11,5 +11,5 @@ angular.module('foodMeApp.aboutPage', ['ngRoute', 'commonServices'])
 
 .controller('aboutPageCtrl', ["$scope", "CommonCode", function($scope, CommonCode) {
   // Always scroll to the top of the page.
-  CommonCode.scrollToId('topOfPage');
+  $('.overall_container').scrollTop(0);
 }]);

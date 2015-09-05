@@ -11,5 +11,5 @@ angular.module('foodMeApp.privacyPage', ['ngRoute', 'commonServices'])
 
 .controller('privacyPageCtrl', ["$scope", "CommonCode", function($scope, CommonCode) {
   // Always scroll to the top of the page.
-  CommonCode.scrollToId('topOfPage');
+  $('.overall_container').scrollTop(0);
 }]);

@@ -92,13 +92,20 @@ a.landing_link {
   background-color: #260126;
   border: none;
   margin-bottom: 1em;
-  outline: none; }
+  outline: none;
+  line-height: 2.5em;
+  text-align: center;
+  cursor: pointer; }
   .landing_download_button:hover {
     color: #CD8B34;
     background-color: #531E11; }
   @media screen and (min-width: 480px) {
     .landing_download_button {
-      font-size: 3em; } }
+      font-size: 3em;
+      width: 12em; } }
+  @media screen and (max-width: 480px) {
+    .landing_download_button {
+      width: 90%; } }
 
 .about_mascot {
   margin-top: 1em;

@@ -54,5 +54,5 @@ angular.module('foodMeApp.landingPage', ['ngRoute', 'commonServices'])
 
   // Actual init.
   init_eyebrows($scope, $interval);
-  CommonCode.scrollToId('topOfPage');
+  $('.overall_container').scrollTop(0);
 }]);
