@@ -8,6 +8,7 @@ angular.module('foodMeApp', [
   'foodMeApp.contactPage',
   'foodMeApp.termsPage',
   'foodMeApp.privacyPage',
+  'foodMeApp.feedbackForm',
 ]).
 config(['$routeProvider',
     function($routeProvider) {

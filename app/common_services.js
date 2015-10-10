@@ -9,5 +9,7 @@ factory('CommonCode', ['$location', '$anchorScroll',
     $location.hash(id);
     $anchorScroll();
   };
+
+  root.feedbackFormURL = 'https://docs.google.com/forms/d/1G3MB-rHYWA6NCEqvGMD_JvIFC0JcqMNvyUtfHeBsHoQ/viewform?usp=send_form';
   return root;
 }]);
