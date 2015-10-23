@@ -5,4 +5,5 @@
 # > pip install s3cmd
 # > s3cmd --configure
 
+s3cmd sync --recursive --guess-mime-type --acl-public app/ s3://www.foodmelongtime.com/
 s3cmd sync --recursive --guess-mime-type --acl-public app/ s3://www.foodme.io/
